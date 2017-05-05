@@ -1,0 +1,5 @@
+E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\bin\Debug\ThriftMSBuildTask.dll
+E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\bin\Debug\ThriftMSBuildTask.pdb
+E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.dll
+E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.pdb
+E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.csprojResolveAssemblyReference.cache

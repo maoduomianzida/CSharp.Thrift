@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<UsingTask TaskName="ThriftBuild" Runtime="CurrentRuntime" AssemblyFile="$(MSBuildToolsPath)\thrift\ThriftMSBuildTask.dll"/>
+	<Target Name="BeforeBuild">
+		<ThriftBuild ThriftExecutable="$(MSBuildToolsPath)\thrift\thrift.exe" 
+					 ThriftLibrary="$(MSBuildProjectDirectory)\$(OutputPath)\Thrift45.dll" 
+					 ThriftDefinitionDir="$(MSBuildProjectDirectory)\thrift" 
+					 ThriftGeneratorParam=":nullable" 
+					 OutputName="$(MSBuildProjectName).Thrift.dll">
+		</ThriftBuild>
+	</Target>
+</Project>
