@@ -55,6 +55,15 @@ namespace ThriftMSBuildTask
         }
 
         /// <summary>
+        /// 是否删除thrift 生成的源码
+        /// </summary>
+        public ITaskItem DeleteSourceCode
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
         /// The full path to a thrift.dll C# library
         /// </summary>
         [Required]
@@ -106,7 +115,6 @@ namespace ThriftMSBuildTask
             m.Importance = importance.ToString();
             m.BuildEngine = this.BuildEngine;
             m.Execute();
-
         }
 
         //recursively find .cs files in srcDir, paths should initially be non-null and empty
@@ -250,6 +258,20 @@ namespace ThriftMSBuildTask
             return csc.Execute();
         }
 
+        protected void DeleteSourceCodeAction(string genDir)
+        {
+            bool deleteSourceCode;
+            if (!bool.TryParse(DeleteSourceCode.ItemSpec, out deleteSourceCode))
+            {
+                deleteSourceCode = true;
+            }
+            if (deleteSourceCode)
+            {
+                if (Directory.Exists(genDir))
+                    Directory.Delete(genDir, true);
+            }
+        }
+
         public override bool Execute()
         {
             string defDir = SafePath(ThriftDefinitionDir.ItemSpec);
@@ -279,7 +301,8 @@ namespace ThriftMSBuildTask
             string[] thriftFileArr = Directory.GetFiles(defDir, "*.thrift");
             if (!GenerateCode(thriftDir, thriftFileArr))
                 return false;
-            string outputPath = Path.Combine(thriftDir, OutputName.ItemSpec);
+            string outputPath = OutputName.ItemSpec;
+            //string outputPath = Path.Combine(thriftDir, OutputName.ItemSpec);
             if (thriftFileArr.Length > 0)
             {
                 if (!CompileThriftCode(thriftDir, outputPath))
@@ -293,8 +316,7 @@ namespace ThriftMSBuildTask
                     File.WriteAllText(lastBuildPath, lastWrite);
             }
             thriftImpl = new TaskItem(outputPath);
-            if (Directory.Exists(genDir))
-                Directory.Delete(genDir, true);
+            DeleteSourceCodeAction(genDir);
 
             return true;
         }

@@ -3,3 +3,9 @@ E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\bin\Debug\ThriftMSBuildTask.p
 E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.dll
 E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.pdb
 E:\Source_Code\thrift\lib\csharp\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.csprojResolveAssemblyReference.cache
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\bin\Debug\ThriftMSBuildTask.dll
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\bin\Debug\ThriftMSBuildTask.pdb
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.csprojResolveAssemblyReference.cache
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.dll
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.pdb
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\obj\Debug\ThriftMSBuildTask.csproj.CoreCompileInputs.cache

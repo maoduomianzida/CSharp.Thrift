@@ -3,3 +3,9 @@ E:\Source_Code\thrift\lib\csharp\src\bin\Debug\Thrift45.pdb
 E:\Source_Code\thrift\lib\csharp\src\obj\Debug\Thrift.45.csprojResolveAssemblyReference.cache
 E:\Source_Code\thrift\lib\csharp\src\obj\Debug\Thrift45.dll
 E:\Source_Code\thrift\lib\csharp\src\obj\Debug\Thrift45.pdb
+E:\Source_Code\CSharp.Thrift\src\bin\Debug\Thrift.dll
+E:\Source_Code\CSharp.Thrift\src\bin\Debug\Thrift.pdb
+E:\Source_Code\CSharp.Thrift\src\obj\Debug\Thrift.45.csprojResolveAssemblyReference.cache
+E:\Source_Code\CSharp.Thrift\src\obj\Debug\Thrift.dll
+E:\Source_Code\CSharp.Thrift\src\obj\Debug\Thrift.pdb
+E:\Source_Code\CSharp.Thrift\src\obj\Debug\Thrift.45.csproj.CoreCompileInputs.cache

@@ -1,0 +1,5 @@
+E:\Source_Code\CSharp.Thrift\src\bin\Release\Thrift.dll
+E:\Source_Code\CSharp.Thrift\src\bin\Release\Thrift.pdb
+E:\Source_Code\CSharp.Thrift\src\obj\Release\Thrift.45.csprojResolveAssemblyReference.cache
+E:\Source_Code\CSharp.Thrift\src\obj\Release\Thrift.dll
+E:\Source_Code\CSharp.Thrift\src\obj\Release\Thrift.pdb

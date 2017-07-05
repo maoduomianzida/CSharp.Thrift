@@ -22,6 +22,7 @@
  */
 
 using System;
+using System.Diagnostics;
 using System.IO;
 
 namespace Thrift.Transport
@@ -80,8 +81,18 @@ namespace Thrift.Transport
             {
                 throw new TTransportException(TTransportException.ExceptionType.NotOpen, "Cannot read from null inputstream");
             }
+            Stopwatch tmp = new Stopwatch();
+            tmp.Start();
 
-            return inputStream.Read(buf, off, len);
+            var result = inputStream.Read(buf, off, len);
+            tmp.Stop();
+            if(tmp.ElapsedMilliseconds > 10000)
+            {
+                string str = "123";
+            }
+            //Console.WriteLine("run time:" + tmp.ElapsedMilliseconds + "毫秒");
+
+            return result;
         }
 
         public override void Write(byte[] buf, int off, int len)

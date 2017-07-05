@@ -22,6 +22,7 @@
  */
 
 using System;
+using System.Diagnostics;
 using System.Text;
 using Thrift.Transport;
 
@@ -218,7 +219,9 @@ namespace Thrift.Protocol
         public override TMessage ReadMessageBegin()
         {
             TMessage message = new TMessage();
+
             int size = ReadI32();
+
             if (size < 0)
             {
                 uint version = (uint)size & VERSION_MASK;
@@ -387,7 +390,8 @@ namespace Thrift.Protocol
 
         private int ReadAll(byte[] buf, int off, int len)
         {
-            return trans.ReadAll(buf, off, len);
+
+           return trans.ReadAll(buf, off, len);
         }
 
         #endregion
