@@ -81,18 +81,8 @@ namespace Thrift.Transport
             {
                 throw new TTransportException(TTransportException.ExceptionType.NotOpen, "Cannot read from null inputstream");
             }
-            Stopwatch tmp = new Stopwatch();
-            tmp.Start();
 
-            var result = inputStream.Read(buf, off, len);
-            tmp.Stop();
-            if(tmp.ElapsedMilliseconds > 10000)
-            {
-                string str = "123";
-            }
-            //Console.WriteLine("run time:" + tmp.ElapsedMilliseconds + "毫秒");
-
-            return result;
+            return inputStream.Read(buf, off, len);
         }
 
         public override void Write(byte[] buf, int off, int len)

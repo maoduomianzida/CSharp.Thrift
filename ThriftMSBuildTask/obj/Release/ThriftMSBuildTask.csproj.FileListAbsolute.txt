@@ -1,0 +1,6 @@
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\bin\Release\ThriftMSBuildTask.dll
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\bin\Release\ThriftMSBuildTask.pdb
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\obj\Release\ThriftMSBuildTask.csprojResolveAssemblyReference.cache
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\obj\Release\ThriftMSBuildTask.csproj.CoreCompileInputs.cache
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\obj\Release\ThriftMSBuildTask.dll
+E:\Source_Code\CSharp.Thrift\ThriftMSBuildTask\obj\Release\ThriftMSBuildTask.pdb

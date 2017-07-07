@@ -228,10 +228,9 @@ namespace ThriftMSBuildTask
                     LogMessage("thrift.exe failed to compile " + thriftFile, MessageImportance.High);
                     return false;
                 }
-                if (p.ExitCode != 0)
+                else
                 {
-                    LogMessage("thrift.exe failed to compile " + thriftFile, MessageImportance.High);
-                    return false;
+                    LogMessage(string.Format("exitcode {0},thrift cs 生成成功 ",p.ExitCode), MessageImportance.High);
                 }
             }
 
